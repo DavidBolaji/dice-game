@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+       <style>
+           body{
+               width: 100vw;
+               height: 100vh;
+               margin: 0;
+               color: #fff;
+               padding: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #b36764;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+           }
+
+           .main {
+               display: flex;
+               width: 60%;
+               height: 80%;
+               flex-direction: column;
+           }
+
+           .header {
+               text-transform: uppercase;
+               display: flex;
+               justify-content: center;
+           }
+
+           .box {
+            background-color: #975654;
+            width: 99%;
+            height: 90%;
+            padding: 1.7rem;
+            font-size: 1rem;
+            font-style: italic;
+            position: relative;
+            -webkit-box-shadow: -1px 2px 20px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 2px 20px -1px rgba(0,0,0,0.75);
+            box-shadow: -1px 2px 20px -1px rgba(0,0,0,0.75);
+           }
+
+           .box button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+           }
+
+       </style>
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+      <div class="main">
+          <div class="header">
+              <h1> Game Rules</h1>
+          </div>
+          <div class="box">
+              <p> The game has 2 players, playing in rounds </p>
+              <p>- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score</p>
+              <p>- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p>
+              <p>- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn</p>
+              <p>- The first player to reach 100 points on GLOBAL score wins the game</p>
+              <p>- At the bottom of the page you can set a winning Score else the first player to get to 100 wins the game</p>
+              <button onclick="redirect()">CLICK HERE TO START</button>
+          </div>
+          
+      </div>
+
+      <script>
+          function redirect() {
+              window.location.replace('http://localhost:5500/index2.html')
+          }
+      </script>
+      
+    </body>
+</html>
